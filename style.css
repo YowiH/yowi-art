@@ -8,7 +8,13 @@ h1 {
     text-align: center;
 }
 
-img {
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main img {
     width: 400px;
     height: 300px;
     object-fit: cover;
@@ -17,15 +23,18 @@ img {
     transition: transform 0.091s ease-in-out;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 main img:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.category {
+    filter: grayscale(100%);
+    transition: transform 0.091s ease-in-out, filter 0.15s ease;
+}
+
+.category.active {
+    filter: grayscale(0%);
 }
 
 .photos {
