@@ -8,13 +8,7 @@ h1 {
     text-align: center;
 }
 
-#photo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#photo-container img {
+img {
     width: 400px;
     height: 300px;
     object-fit: cover;
@@ -23,6 +17,21 @@ h1 {
     transition: transform 0.091s ease-in-out;
 }
 
-#photo-container img:hover {
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main img:hover {
     transform: scale(1.1);
+    cursor: pointer;
+}
+
+.photos {
+    display: none;
+}
+
+.photos.active {
+    display: block;
 }
