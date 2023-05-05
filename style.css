@@ -1,46 +1,51 @@
-body {
-    background-color: #f2f2f2;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+body {
+    background-color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+}
+
+header h1 {
     color: #333;
     text-align: center;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-main img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 5px;
-    transition: transform 0.091s ease-in-out;
-}
-
-main img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.category {
-    filter: grayscale(100%);
-    transition: transform 0.091s ease-in-out, filter 0.15s ease;
-}
-
-.category.active {
-    filter: grayscale(0%);
-}
-
-.photos {
-    display: none;
-}
-
-.photos.active {
+header img {
     display: block;
+    margin: 0 auto;
+    width: 15rem;
+    height: auto;
+}
+
+main #art {
+    background-color: black;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+main #art #sketches h2 {
+    color: white;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+main #art #sketches img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease-in;
+}
+
+main #art #sketches img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
 }
