@@ -28,7 +28,7 @@ header img {
     transition: top 0.5s ease-in-out;
     z-index: 1;
 }
-header img:hover {
+header img:active{
     top: 7rem;
 }
 
@@ -49,13 +49,9 @@ main #art #sketches h2 {
 }
 
 main #art #sketches img {
-    width: 300px;
+    width: 600px;
     height: auto;
     transition: transform 0.3s ease-in;
-}
-
-main #art #sketches img:hover {
-    transform: scale(1.05);
 }
 
 footer {
